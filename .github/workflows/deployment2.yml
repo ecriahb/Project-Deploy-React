@@ -3,6 +3,9 @@ on:
     push:
         branches:
             - main
+        paths-ignore:
+            - '.github/workflows/deployment.yml'
+            - '.github/workflows/issue.yaml'
     workflow_dispatch:
 jobs:
   Lint:
